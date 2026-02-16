@@ -108,8 +108,8 @@ function loadLevel(current_level) {
 		drawWalls( walls_active );
 		drawCells ( upper_active );
 		drawCells ( lower_active);
-		PS.debug("level 1 loaded\n");
-		PS.debug("level is: " + current_level + "\n");
+		//PS.debug("level 1 loaded\n");
+		//PS.debug("level is: " + current_level + "\n");
 	}
 	if (current_level == 2) {
 		walls_active = walls_level_2
@@ -123,8 +123,8 @@ function loadLevel(current_level) {
 		drawWalls( walls_active );
 		drawCells ( upper_active );
 		drawCells ( lower_active);
-		PS.debug("level 2 loaded\n");
-		PS.debug("level is: " + current_level + "\n");
+		//PS.debug("level 2 loaded\n");
+		//PS.debug("level is: " + current_level + "\n");
 	}
 	if (current_level == 3) {
 		walls_active = walls_level_3
@@ -138,8 +138,8 @@ function loadLevel(current_level) {
 		drawWalls( walls_active );
 		drawCells ( upper_active );
 		drawCells ( lower_active);
-		PS.debug("level 3 loaded\n");
-		PS.debug("level is: " + current_level + "\n");
+		//PS.debug("level 3 loaded\n");
+		//PS.debug("level is: " + current_level + "\n");
 	}
 	if (current_level == 4) {
 		walls_active = walls_level_4
@@ -153,8 +153,8 @@ function loadLevel(current_level) {
 		drawWalls( walls_active );
 		drawCells ( upper_active );
 		drawCells ( lower_active);
-		PS.debug("level 4 loaded\n");
-		PS.debug("level is: " + current_level + "\n");
+		//PS.debug("level 4 loaded\n");
+		//PS.debug("level is: " + current_level + "\n");
 	}
 	if (current_level > 4) {
 		walls_active = walls_end
@@ -168,8 +168,8 @@ function loadLevel(current_level) {
 		drawWalls( walls_active );
 		drawCells ( upper_active );
 		drawCells ( lower_active);
-		PS.debug("endscreen loaded\n");
-		PS.debug("level is: " + current_level + "\n");
+		//PS.debug("endscreen loaded\n");
+		//PS.debug("level is: " + current_level + "\n");
 	}
 }
 
