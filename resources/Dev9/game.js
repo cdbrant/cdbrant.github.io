@@ -75,9 +75,11 @@ function draw_net() {
 		PS.color( 1, net_position, PS.COLOR_GRAY );
 		PS.glyph( 1, net_position, 0x1F945 );
 		PS.color( 1, ( net_position - 1 ), PS.COLOR_GRAY );
-		PS.color( 1, ( net_position - 2 ), PS.COLOR_BLUE );
 		PS.glyph( 1, ( net_position - 1), 0x1F945 );
-		PS.glyph( 1, ( net_position - 2), 0x0049 );
+		if ( net_position > 3) {
+			PS.color( 1, ( net_position - 2 ), PS.COLOR_BLUE );
+			PS.glyph( 1, ( net_position - 2), 0x0049 );
+		}
 		if ( net_position < 10 ) {
 			PS.color( 1, ( net_position + 1 ), PS.COLOR_GRAY );
 			PS.glyph( 1, ( net_position + 1), 0x1F945 );
@@ -609,4 +611,5 @@ PS.input = function( sensors, options ) {
  		}
 	};
 };
+
 
